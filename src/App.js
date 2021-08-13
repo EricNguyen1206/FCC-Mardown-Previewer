@@ -13,10 +13,6 @@ function App() {
   return (
     <div className="App">
       <Editor markdown={text} setText={setText} />
-      {/* <div id="Editor">
-        <h3>My Markdown Previewer</h3>
-        <textarea id="editor" name="text" row="10" value={text} onChange={(e) => setText(e.target.value) }></textarea>
-    </div> */}
       <Previewer markdown={text} />
     </div>
   );
@@ -41,6 +37,7 @@ const Previewer = (props) => {
         }}
         id="preview"
       ></div>
+      <span id="details">Challenge by <a href="http://www.https://www.freecodecamp.org/">freecodecamp</a>. Code by <a href="https://github.com/EricNguyen1206/FCC-Mardown-Previewer">Eric Nguyen</a></span>
     </div>
   )
 }
